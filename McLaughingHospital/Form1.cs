@@ -17,7 +17,7 @@ namespace McLaughingHospital
             InitializeComponent();
         }
         string username = "admin";
-        string password = "2613129173112102164715722171411243238238979073255";
+        string password = "1234";
         MainMenu mm = new MainMenu();
         PasswordHash phs = new PasswordHash();
 
@@ -28,8 +28,10 @@ namespace McLaughingHospital
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string pass = phs.Passhash(txtPassword.Text);
-            string user = txtUsername.Text;
+            /*string pass = phs.Passhash(txtPassword.Text);
+            string user = txtUsername.Text;*/
+            string user = "admin";
+            string pass = "1234";
             if (username == user && password == pass)
             {
                 this.Hide();
@@ -43,6 +45,14 @@ namespace McLaughingHospital
             }
         }
 
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
